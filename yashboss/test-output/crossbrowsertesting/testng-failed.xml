@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [crossbrowsertesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" name="edgetest(failed)">
+    <parameter name="password" value="manager"/>
+    <parameter name="browserName" value="edge"/>
+    <parameter name="url" value="https://demo.actitime.com/"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="com.trello.qspiders.learntestng.ProperAutomationScript">
+        <methods>
+          <include name="configBeforeMethod"/>
+          <include name="configAfterMethod"/>
+          <include name="loginLogoutOfActiTime"/>
+        </methods>
+      </class> <!-- com.trello.qspiders.learntestng.ProperAutomationScript -->
+    </classes>
+  </test> <!-- edgetest(failed) -->
+  <test thread-count="2" name="firefox(failed)">
+    <parameter name="password" value="manager"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="url" value="https://demo.actitime.com/"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="com.trello.qspiders.learntestng.ProperAutomationScript">
+        <methods>
+          <include name="configBeforeMethod"/>
+          <include name="configAfterMethod"/>
+          <include name="loginLogoutOfActiTime"/>
+        </methods>
+      </class> <!-- com.trello.qspiders.learntestng.ProperAutomationScript -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [crossbrowsertesting] -->
